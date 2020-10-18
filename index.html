@@ -4,21 +4,33 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <script src="src/element.js"></script>
-    <div id="map"></div>
-    <script>
-        function initMap() {
-            let map = new google.maps.Map(document.getElementById("map"), {
-                center: { lat: 38.957235, lng: -95.248962 },
-                zoom: 16,
-            });
-        }
-    </script>
-
     <script defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDToF-iEtrf7A3D6jwq31oriC75SOB-UjM&callback=initMap">
     </script>
+</head>
+<body>
+    <h1>
+        <div class="h1Text">KU Map </div>
+        <div class="Jayhawk">
+            <img src="1_Jayhawk.png" alt="Jayhawk" >
+        </div>
+    </h1>
+
+    <input type="text" id="DirectionsStart" class="Direction-Input"></input>
+    <br><input type="text" id="Waypoints" class="Direction-Input"></input>
+    <br><input type="text" id="DirectionsEnd" class="Direction-Input"></input>
+    <br><button id="CalculateDirections" class="Direction-Input">Directions</button>
+
+    <div id="style-selector-control" class="map-control">
+        <select id="style-selector" class="selector-control">
+          <option value="default">Default</option>
+          <option value="silver">Silver</option>
+          <option value="night">Night mode</option>
+        </select>
+      </div>
+
+    <script src="src/element.js"></script>
+    <div id="map"></div>
+    <script src="src/map.js"></script>
 </body>
 </html>
