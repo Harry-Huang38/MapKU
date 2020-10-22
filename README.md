@@ -5,5 +5,5 @@ Group Project for EECS 448
 <br>
 <h4>Links<h4>
 <h4>To run<h4>
-<h4>Sources<h4>
-<br>[Google Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/reference/map)<br>
+<h4>Sources<h4
+[Google Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/reference/map)
